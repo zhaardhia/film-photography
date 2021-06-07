@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocaldiskZha</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../HTML/index.html" id="navbar-home">
+                LocaldiskZha
+            </a>
+
+            <div class="navbar-toggle" id="mobile-menu">
+                <input type="checkbox">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>  
+
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="../HTML/index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar-item">
+                   <a href="#gear" class="navbar__links">Gear</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#films" class="navbar__links">Films</a>
+                </li>
+                <li class="navbar-btn">
+                    <a href="#about-me" class="button">About</a>
+                </li>
+            </ul>
+            
+        </nav>
+    </header>
+    
+    <main>
+        <h2 class="intro">A film photography journal by LocaldiskZha</h2>
+
+        <div class="carousel">
+            <i class="fas fa-chevron-right" id="next-btn" onclick="plusSlides(1)"></i>
+            <i class="fas fa-chevron-left" id="prev-btn" onclick="plusSlides(-1)"></i>
+            <div class="slide">
+                <img src="../assets/sms-lightrail.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="../assets/vintage-vibes.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="../assets/abot.jpg" alt="">
+            </div>
+        </div>
+        
+
+        <div id="content">
+            <article id="gear" class="grid">
+                <h4>Gear</h4>
+                <div class="gear-desc">
+                    <img id="minolta" src="../assets/minolta.jpeg" alt="">
+                    <div class="gear-sub">
+                        <h3>Minolta SRT 101</h3>
+                        <blockquote>The Minolta SR-T 101 is a 35mm manual focus SLR camera with Through-The-Lens exposure metering – TTL for short - that was launched in 1966 by Minolta Camera Co. It was aimed at demanding amateur and semi-professional photographers. The SR-T 101 stayed in production for ten years with only minor changes.</blockquote>
+                    </div>
+                </div>
+            </article>
+            <article id="films" class="grid">
+                <h4>Films</h4>
+                <div class="many-films">
+                    <div class="kodak-gold">
+                        <a href="">
+                            <h5>Kodak Gold 200</h5>
+                        </a>
+                        <div class="slide-gold">
+                            <blockquote>KODAK Bright Sun & Flash Film is a color negative film that offers the best combination of color saturation, color accuracy, and sharpness at ISO 200. It is designed for general picture-taking situations in daylight or with electronic flash. You can also expose this film under photolamps (3400 K) or tungsten illumination (3200 K) with filters.
+
+                            </blockquote>
+                            <img src="../assets/Showcase/Kodak Gold/pemda1.jpg" alt="">
+                            <img src="../assets/Showcase/Kodak Gold/minuman-breeze.jpg" alt="">
+                            
+                            <p><br><hr></p>
+                        </div>
+                    </div>
+
+                    <div class="fuji-superia">
+                        <a href="#">
+                            <h5>Fuji Superia X-Tra 400</h5>
+                        </a>
+                        <div class="slide-superia">
+                            <blockquote>Fujicolor Superia is a Fujifilm brand of daylight balanced colour negative film introduced ca.1998 primarily aimed at the consumer market, but was also sold in a professional 'press' variant. A key feature at launch was the '4th' cyan colour layer designed to provide improved colour reproduction under fluorescent lighting. Its Kodak equivalent is the Kodacolor (later Kodak) Gold/Ultramax line.</blockquote>
+                            
+                            <img src="../assets/Showcase/Fuji Superia/citra.jpg" alt="">
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </article>
+            <aside class="about" id="about-me">
+                <img src="../assets/About/firzha.jpg" alt="">
+                <h4>About LocaldiskZha</h4>
+                <p>LocaldiskZha is a photography portfolio by me aka Firzha Ardhia Ramadhan. Im a Computer Science Student that passionate in Programming, Music, Photography, and other kinds of multimedia stuff. </p>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <p>&copy; 2021, LocaldiskZha</p>
+            <a id="instagram" href="https://www.instagram.com/localdiskzha">
+                <img src="../assets/instagram.png" alt="">
+            </a>
+        </div>
+    </footer>
+    <script src="../JS/script.js"></script>
+</body>
+</html>
